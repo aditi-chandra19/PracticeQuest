@@ -3,14 +3,14 @@
 using namespace std;
 
 int main() {
-    double n1, n2;
+    int n1, n2;
     char op;
 
     cout << "Basic Calculator" << endl;
     cout << "Enter first number: ";
     cin >> n1;
 
-    cout << "Enter an operator (+, -, *, /): ";
+    cout << "Enter an operator (+, -, *, /,%): ";
     cin >> op;
 
     cout << "Enter second number: ";
@@ -24,14 +24,17 @@ int main() {
             cout << "Result = " << n1 - n2 << endl;
             break;
         case '*':
-            cout << "Result = " << n1 * n2 << endl;
+            cout << "Result = " << n1 * n2 << endl; // % dont work on double therefore use int also can take long long
             break;
         case '/':
             if (n2 == 0) {
-                cout << "Error: Division by zero is not allowed." << endl;
+                cout << "invalid" << endl;
             } else {
                 cout << "Result = " << n1 / n2 << endl;
             }
+            break;
+        case '%':
+            cout << "Result = " << n1 % n2 << endl;
             break;
         default:
             cout << "Error: Invalid operator." << endl;
