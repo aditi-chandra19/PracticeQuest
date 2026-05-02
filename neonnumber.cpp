@@ -2,15 +2,17 @@
 using namespace std;
 
 int main() {
-    int n, square, sum = 0;
+    int n, square, sum = 0, temp;
 
     cout << "Enter a number: ";
     cin >> n;
 
     square = n * n;
+    temp = square;
 
-    for (int temp = square; temp > 0; temp = temp / 10) {
-        sum += temp % 10;
+    while (temp > 0) {
+        sum = sum + (temp % 10);
+        temp = temp / 10;
     }
 
     if (sum == n) {
