@@ -11,6 +11,9 @@ class stu{ // public class stu{}
         this->roll=a;
         this->name=b;
     }
+
+    //destructor
+    // ~stu(){}
     void greet(){
         cout<<"hii"<<" "<<name<<" "<<roll;
     }
