@@ -10,19 +10,19 @@ using namespace std;
 // 6. do-while loop menu ko baar-baar chalata hai jab tak user exit na kare
 
 class BankAccount {
-    // Ye data members account number aur balance store karte hain
+    //  data members account number aur balance store karte hain
     int accNo;
     float balance;
 
 public:
-    // Ye parameterized constructor hai
+    //  parameterized constructor 
     BankAccount(int a, float b) {
         accNo = a;
         balance = b;
         cout << "Bank account created" << endl;
     }
 
-    // Ye destructor hai
+    //  destructor hai
     ~BankAccount() {
         cout << "Bank account destroyed" << endl;
     }
