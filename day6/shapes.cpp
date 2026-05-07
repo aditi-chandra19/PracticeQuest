@@ -3,14 +3,14 @@ using namespace std;
 
 class Shape {
    public:
-    Shape() {
+    Shape() {//constructor
         cout << "constructor created" << endl;
     }
 
     virtual float area() = 0;//virtual function coz we are using abstract class
     virtual float perimeter() = 0;
 
-    virtual ~Shape() {
+    virtual ~Shape() {//destructor
         cout << "constructor destroyed" << endl;
     }
 };
@@ -19,7 +19,7 @@ class Circle : public Shape {
     float radius;
 
    public:
-    Circle(float r) : radius(r) {}
+    Circle(float r)  {this -> radius=r;}
 
     float area() {
         return 3.14 * radius * radius;
@@ -34,7 +34,7 @@ class Square : public Shape {
     float side;
 
    public:
-    Square(float s) : side(s) {}
+    Square(float s)  {this -> side=s;}
 
     float area() {
         return side * side;
@@ -50,7 +50,10 @@ class Rectangle : public Shape {
     float breadth;
 
    public:
-    Rectangle(float l, float b) : length(l), breadth(b) {}
+    Rectangle(float l, float b)  {
+        this -> length=l;
+        this -> breadth=b;
+    }
 
     float area() {
         return length * breadth;
