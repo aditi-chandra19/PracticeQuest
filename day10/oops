@@ -1,0 +1,11 @@
+// classes- blueprint/action plan also a user defined data type
+// object - its a real world instance 
+// abstraction- user implementation to be hidden
+// encapsulation- data and data member binded also provide data hiding using access modifier
+// Friend Keyword- we can access private members using friend keyword
+// -------------------------
+// abstraction - hide implementation whereas encapsultion - hide data 
+// access modifier- public, protected,private 
+// ---------------------------
+// polymorphism- same thing in diff form
+
