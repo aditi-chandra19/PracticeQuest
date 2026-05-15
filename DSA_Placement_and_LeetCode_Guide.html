@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DSA Placement and LeetCode Guide</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #111;
+      background: #eef2f6;
+    }
+    .page {
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 24px 40px;
+      background: #ffffff;
+    }
+    .hero {
+      border: 1px solid #d5dee9;
+      background: linear-gradient(135deg, #f6f8fb 0%, #edf4fb 100%);
+      border-radius: 18px;
+      padding: 26px 28px;
+      margin-bottom: 26px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+    .subtitle {
+      margin: 0 0 8px;
+      font-size: 14px;
+      color: #44556b;
+      line-height: 1.5;
+    }
+    .note {
+      margin: 0;
+      font-size: 13px;
+      color: #5d6a7d;
+      line-height: 1.45;
+    }
+    h2 {
+      font-size: 22px;
+      margin: 30px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e7edf4;
+      page-break-after: avoid;
+    }
+    h3 {
+      font-size: 16px;
+      margin: 18px 0 8px;
+      page-break-after: avoid;
+    }
+    p, li {
+      font-size: 12.6px;
+      line-height: 1.48;
+    }
+    ul, ol {
+      margin: 8px 0 10px 18px;
+      padding: 0;
+    }
+    li {
+      margin: 0 0 6px;
+    }
+    .topic-block {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #dfe6ee;
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #fbfcfe;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .compact-list li {
+      margin-bottom: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 14px;
+      font-size: 12.5px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    th, td {
+      border: 1px solid #d9e1ea;
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f3f6fa;
+      font-size: 12px;
+    }
+    .level-line {
+      margin: 6px 0;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .chip {
+      border: 1px solid #d9e2ec;
+      background: #f7f9fc;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 11.6px;
+    }
+    .footer-note {
+      margin-top: 22px;
+      font-size: 11px;
+      color: #66768a;
+      text-align: center;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>DSA Placement and LeetCode Guide</h1>
+      <p class="subtitle">A structured roadmap for placements, coding interviews, strong DSA fundamentals, and LeetCode practice.</p>
+      <p class="note">This guide consolidates the full DSA syllabus, advanced DSA syllabus, best study order, highest-value placement topics, and a topic-wise LeetCode progression from beginner to advanced.</p>
+    </section>
+
+    <h2>Core DSA Syllabus</h2>
+    <section class='topic-block'><h3>0. C++ and STL Basics</h3><ul><li>Input/output, functions, recursion basics</li><li>Arrays, strings, vectors</li><li>pair, stack, queue, deque, priority_queue</li><li>set, unordered_set, map, unordered_map</li><li>Sorting with STL and custom comparators</li></ul></section><section class='topic-block'><h3>1. Complexity and Problem-Solving Basics</h3><ul><li>Time complexity, space complexity</li><li>Big-O, Omega, Theta</li><li>Best, average, worst case</li><li>Dry run, tracing, and constraints-based thinking</li></ul></section><section class='topic-block'><h3>2. Arrays</h3><ul><li>Traversal, insertion, deletion, update</li><li>Prefix sum, suffix sum, difference array</li><li>Kadane&#x27;s algorithm, majority element, Dutch national flag</li><li>Rotate array, merge intervals, missing and repeating numbers</li><li>Subarray problems</li></ul></section><section class='topic-block'><h3>3. Strings</h3><ul><li>Basic operations, frequency counting</li><li>Palindrome and anagram problems</li><li>Pattern matching basics</li><li>String hashing basics</li><li>Subsequence vs substring</li><li>Longest common prefix, compression, manipulation</li></ul></section><section class='topic-block'><h3>4. Searching</h3><ul><li>Linear search</li><li>Binary search</li><li>Binary search on answer</li><li>Lower bound and upper bound</li><li>Search in rotated sorted array, peak element, first and last occurrence</li></ul></section><section class='topic-block'><h3>5. Sorting</h3><ul><li>Bubble sort, selection sort, insertion sort</li><li>Merge sort, quick sort, heap sort</li><li>Counting sort, radix sort basics</li><li>Stable vs unstable sorting</li></ul></section><section class='topic-block'><h3>6. Bit Manipulation</h3><ul><li>AND, OR, XOR, NOT</li><li>Left and right shift</li><li>Set, unset, toggle, and check bit</li><li>Count set bits, power of 2, XOR tricks, bitmask basics</li></ul></section><section class='topic-block'><h3>7. Hashing</h3><ul><li>Hash map, hash set, frequency array</li><li>Collision idea</li><li>Applications in arrays and strings</li><li>Two sum, longest consecutive sequence, subarray sum</li></ul></section><section class='topic-block'><h3>8. Two Pointers and Sliding Window</h3><ul><li>Opposite-direction pointers and same-direction pointers</li><li>Fixed-size and variable-size window</li><li>Longest substring and minimum window patterns</li><li>Subarray condition problems</li></ul></section><section class='topic-block'><h3>9. Linked List</h3><ul><li>Singly, doubly, and circular linked list</li><li>Reverse list, middle of list, detect cycle</li><li>Remove nth node, merge two sorted lists, intersection point</li><li>LRU concept basics</li></ul></section><section class='topic-block'><h3>10. Stack</h3><ul><li>Stack using array or linked list</li><li>Infix, postfix, prefix basics</li><li>Balanced parentheses, next greater element</li><li>Monotonic stack, largest rectangle in histogram, stock span</li></ul></section><section class='topic-block'><h3>11. Queue</h3><ul><li>Queue implementation, circular queue, deque</li><li>Monotonic queue basics</li><li>BFS use of queue</li></ul></section><section class='topic-block'><h3>12. Recursion and Backtracking Basics</h3><ul><li>Recursive thinking, base case, recursion tree</li><li>Subsequence generation, permutations, combinations, subsets</li><li>N-Queens, Rat in a Maze, Sudoku</li><li>Basic pruning</li></ul></section><section class='topic-block'><h3>13. Trees</h3><ul><li>Terminology and binary tree representation</li><li>Inorder, preorder, postorder</li><li>BFS and level order</li><li>Height, size, diameter, balanced tree</li><li>Left, right, top, and bottom view</li><li>LCA in binary tree, path sum, serialize and deserialize basics</li></ul></section><section class='topic-block'><h3>14. Binary Search Tree</h3><ul><li>Insert, search, delete</li><li>Floor, ceil</li><li>Kth smallest and kth largest</li><li>Validate BST, BST iterator, LCA in BST</li></ul></section><section class='topic-block'><h3>15. Heap and Priority Queue</h3><ul><li>Min heap, max heap, heapify</li><li>Kth largest or smallest</li><li>Top K elements</li><li>Merge K sorted arrays or lists</li><li>Median from data stream concept</li></ul></section><section class='topic-block'><h3>16. Greedy</h3><ul><li>Activity selection, fractional knapsack, job sequencing</li><li>Huffman coding, interval scheduling, gas station type logic</li><li>Greedy proof intuition</li></ul></section><section class='topic-block'><h3>17. Graphs</h3><ul><li>Graph representation</li><li>BFS, DFS, connected components</li><li>Cycle detection in undirected and directed graph</li><li>Bipartite graph</li><li>Topological sort and Kahn&#x27;s algorithm</li><li>Shortest path in unweighted graph, Dijkstra, Bellman-Ford, Floyd-Warshall basics</li><li>Minimum spanning tree, Prim&#x27;s, Kruskal&#x27;s</li><li>DSU in graph problems, SCC basics, grid BFS and DFS</li></ul></section><section class='topic-block'><h3>18. Dynamic Programming</h3><ul><li>Memoization, tabulation, state design</li><li>1D DP, 2D DP, subsequence DP</li><li>Knapsack pattern, LIS, LCS, edit distance, coin change</li><li>Matrix path problems, partition DP basics, interval DP basics, stock DP basics</li></ul></section><section class='topic-block'><h3>19. Basic Mathematics for DSA</h3><ul><li>GCD and LCM</li><li>Prime numbers and sieve of Eratosthenes</li><li>Fast exponentiation</li><li>Modular arithmetic</li><li>Combinatorics basics</li><li>Factors, divisors, overflow awareness</li></ul></section>
+
+    <h2>Advanced DSA Syllabus</h2>
+    <section class='topic-block'><h3>1. Advanced Trees</h3><ul><li>AVL tree, red-black tree</li><li>B-tree and B+ tree concepts</li><li>Trie</li><li>Segment tree</li><li>Lazy propagation</li><li>Fenwick tree / BIT</li><li>Order statistic tree concept</li></ul></section><section class='topic-block'><h3>2. Advanced Graphs</h3><ul><li>Disjoint Set Union in depth</li><li>Strongly connected components</li><li>Tarjan&#x27;s algorithm, Kosaraju&#x27;s algorithm</li><li>Bridges and articulation points</li><li>Lowest common ancestor in trees</li><li>Binary lifting</li><li>Shortest path in DAG</li><li>0-1 BFS, multi-source BFS</li><li>Dijkstra variants</li><li>Network flow basics, max flow, min cut intro</li></ul></section><section class='topic-block'><h3>3. Advanced Dynamic Programming</h3><ul><li>DP on trees</li><li>Digit DP</li><li>Bitmask DP</li><li>State compression DP</li><li>Rerooting DP</li><li>Divide and conquer DP optimization</li><li>Knuth optimization concept</li><li>Advanced stock DP and game DP</li></ul></section><section class='topic-block'><h3>4. Advanced String Algorithms</h3><ul><li>KMP, Rabin-Karp, Z algorithm</li><li>Boyer-Moore basics</li><li>Trie-based string problems</li><li>Rolling hash</li><li>Suffix array concept</li><li>Suffix automaton concept</li><li>Manacher&#x27;s algorithm concept</li></ul></section><section class='topic-block'><h3>5. Advanced Range Query Structures</h3><ul><li>Sparse table</li><li>Segment tree variants</li><li>Fenwick tree variants</li><li>Mo&#x27;s algorithm concept</li></ul></section><section class='topic-block'><h3>6. Advanced Bit Manipulation</h3><ul><li>Bitmask enumeration</li><li>Subset generation using bits</li><li>XOR basis concept</li><li>State compression</li></ul></section><section class='topic-block'><h3>7. Advanced Problem-Solving Paradigms</h3><ul><li>Meet in the middle</li><li>Divide and conquer optimization</li><li>Sweep line concept</li><li>Coordinate compression</li><li>Randomized algorithms basics</li></ul></section><section class='topic-block'><h3>8. Advanced Heaps and Priority Structures</h3><ul><li>Mergeable heaps concept</li><li>Binomial heap concept</li><li>Fibonacci heap concept</li><li>Indexed priority queue concept</li></ul></section>
+
+    <h2>Placement Strategy</h2>
+    <section class="two-col">
+      <div class="card">
+        <h3>Best Order to Study</h3>
+        <ol class="compact-list"><li>C++ STL and complexity</li><li>Arrays, strings, hashing</li><li>Binary search</li><li>Sorting</li><li>Two pointers and sliding window</li><li>Linked list</li><li>Stack and queue</li><li>Recursion and backtracking</li><li>Trees, BST, heap</li><li>Graphs</li><li>Greedy</li><li>Dynamic programming</li><li>Bit manipulation</li><li>Math basics</li><li>Advanced DSA topics</li></ol>
+      </div>
+      <div class="card">
+        <h3>Highest-Value Topics for Placements</h3>
+        <div class="chips"><span class='chip'>Arrays</span><span class='chip'>Strings</span><span class='chip'>Hashing</span><span class='chip'>Binary search</span><span class='chip'>Two pointers</span><span class='chip'>Sliding window</span><span class='chip'>Stack</span><span class='chip'>Queue</span><span class='chip'>Linked list</span><span class='chip'>Trees</span><span class='chip'>BST</span><span class='chip'>Heap</span><span class='chip'>Graphs</span><span class='chip'>Greedy</span><span class='chip'>Dynamic programming</span><span class='chip'>Recursion and backtracking</span><span class='chip'>Bit manipulation</span></div>
+      </div>
+    </section>
+
+    <section class="topic-block">
+      <h3>Practical Phases</h3>
+      <table>
+        <thead>
+          <tr><th>Phase</th><th>Focus</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Phase 1: Foundation</td><td>Arrays, strings, hashing, binary search</td></tr><tr><td>Phase 2: Interview Core</td><td>Two pointers, sliding window, linked list, stack, queue, heap</td></tr><tr><td>Phase 3: Strong DSA</td><td>Trees, BST, graphs, greedy, dynamic programming, math basics</td></tr><tr><td>Phase 4: Advanced</td><td>Trie, segment tree, DSU, Fenwick tree, SCC, bridges, articulation points, bitmask DP</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="topic-block">
+      <h3>Suggested Solved Problem Targets</h3>
+      <ul><li>Placement-ready base: 120 to 150 solved problems with revision</li><li>Strong company prep: 200 to 250 solved problems</li><li>Very strong LeetCode base: 300 plus problems with revision and pattern notes</li></ul>
+    </section>
+
+    <h2>Topic-Wise LeetCode Sheet</h2>
+    <p>Solve each topic in order. Finish beginner problems first, then intermediate, then advanced, and revise wrong problems after a few days.</p>
+    <section class='topic-block'><h3>1. Arrays</h3><p class='level-line'><strong>Beginner:</strong> Two Sum, Contains Duplicate, Best Time to Buy and Sell Stock, Maximum Subarray</p><p class='level-line'><strong>Intermediate:</strong> Product of Array Except Self, Merge Intervals, 3Sum, Sort Colors</p><p class='level-line'><strong>Advanced:</strong> First Missing Positive, Trapping Rain Water</p></section><section class='topic-block'><h3>2. Strings</h3><p class='level-line'><strong>Beginner:</strong> Valid Anagram, Valid Palindrome, Longest Common Prefix, Implement strStr()</p><p class='level-line'><strong>Intermediate:</strong> Group Anagrams, Longest Substring Without Repeating Characters, String Compression, Palindrome Partitioning</p><p class='level-line'><strong>Advanced:</strong> Minimum Window Substring, Longest Palindromic Substring</p></section><section class='topic-block'><h3>3. Hashing and Prefix Sum</h3><p class='level-line'><strong>Beginner:</strong> Ransom Note, Isomorphic Strings, Find the Difference, Subarray Sum Equals K</p><p class='level-line'><strong>Intermediate:</strong> Longest Consecutive Sequence, Contiguous Array, Top K Frequent Elements</p><p class='level-line'><strong>Advanced:</strong> Prefix and Suffix Search, Random Pick with Weight</p></section><section class='topic-block'><h3>4. Binary Search</h3><p class='level-line'><strong>Beginner:</strong> Binary Search, Search Insert Position, First Bad Version, Sqrt(x)</p><p class='level-line'><strong>Intermediate:</strong> Search in Rotated Sorted Array, Find Peak Element, Koko Eating Bananas, Capacity To Ship Packages Within D Days</p><p class='level-line'><strong>Advanced:</strong> Median of Two Sorted Arrays, Split Array Largest Sum</p></section><section class='topic-block'><h3>5. Two Pointers and Sliding Window</h3><p class='level-line'><strong>Beginner:</strong> Valid Palindrome II, Move Zeroes, Squares of a Sorted Array</p><p class='level-line'><strong>Intermediate:</strong> Container With Most Water, 3Sum, Longest Repeating Character Replacement, Permutation in String</p><p class='level-line'><strong>Advanced:</strong> Minimum Window Substring, Sliding Window Maximum</p></section><section class='topic-block'><h3>6. Linked List</h3><p class='level-line'><strong>Beginner:</strong> Reverse Linked List, Middle of the Linked List, Merge Two Sorted Lists, Linked List Cycle</p><p class='level-line'><strong>Intermediate:</strong> Remove Nth Node From End of List, Reorder List, Intersection of Two Linked Lists, Add Two Numbers</p><p class='level-line'><strong>Advanced:</strong> Reverse Nodes in k-Group, Copy List with Random Pointer</p></section><section class='topic-block'><h3>7. Stack and Monotonic Stack</h3><p class='level-line'><strong>Beginner:</strong> Valid Parentheses, Implement Stack using Queues, Min Stack</p><p class='level-line'><strong>Intermediate:</strong> Daily Temperatures, Evaluate Reverse Polish Notation, Asteroid Collision, Decode String</p><p class='level-line'><strong>Advanced:</strong> Largest Rectangle in Histogram, Basic Calculator</p></section><section class='topic-block'><h3>8. Queue and Heap</h3><p class='level-line'><strong>Beginner:</strong> Implement Queue using Stacks, Last Stone Weight, Kth Largest Element in a Stream</p><p class='level-line'><strong>Intermediate:</strong> Top K Frequent Elements, K Closest Points to Origin, Find Median from Data Stream</p><p class='level-line'><strong>Advanced:</strong> Merge k Sorted Lists, Task Scheduler</p></section><section class='topic-block'><h3>9. Recursion and Backtracking</h3><p class='level-line'><strong>Beginner:</strong> Subsets, Permutations, Generate Parentheses</p><p class='level-line'><strong>Intermediate:</strong> Combination Sum, Palindrome Partitioning, Letter Combinations of a Phone Number, Word Search</p><p class='level-line'><strong>Advanced:</strong> N-Queens, Sudoku Solver</p></section><section class='topic-block'><h3>10. Trees</h3><p class='level-line'><strong>Beginner:</strong> Maximum Depth of Binary Tree, Invert Binary Tree, Same Tree, Symmetric Tree</p><p class='level-line'><strong>Intermediate:</strong> Binary Tree Level Order Traversal, Diameter of Binary Tree, Balanced Binary Tree, Path Sum II</p><p class='level-line'><strong>Advanced:</strong> Binary Tree Maximum Path Sum, Serialize and Deserialize Binary Tree</p></section><section class='topic-block'><h3>11. BST</h3><p class='level-line'><strong>Beginner:</strong> Search in a Binary Search Tree, Minimum Absolute Difference in BST, Range Sum of BST</p><p class='level-line'><strong>Intermediate:</strong> Validate Binary Search Tree, Kth Smallest Element in a BST, Lowest Common Ancestor of a BST</p><p class='level-line'><strong>Advanced:</strong> Delete Node in a BST, Convert BST to Greater Tree</p></section><section class='topic-block'><h3>12. Greedy</h3><p class='level-line'><strong>Beginner:</strong> Assign Cookies, Can Place Flowers, Lemonade Change</p><p class='level-line'><strong>Intermediate:</strong> Jump Game, Partition Labels, Gas Station, Non-overlapping Intervals</p><p class='level-line'><strong>Advanced:</strong> Jump Game II, Candy</p></section><section class='topic-block'><h3>13. Graphs</h3><p class='level-line'><strong>Beginner:</strong> Find if Path Exists in Graph, Flood Fill, Number of Islands, Max Area of Island</p><p class='level-line'><strong>Intermediate:</strong> Clone Graph, Course Schedule, Rotting Oranges, Pacific Atlantic Water Flow</p><p class='level-line'><strong>Advanced:</strong> Word Ladder, Alien Dictionary</p></section><section class='topic-block'><h3>14. Advanced Graphs</h3><p class='level-line'><strong>Beginner:</strong> Network Delay Time</p><p class='level-line'><strong>Intermediate:</strong> Cheapest Flights Within K Stops, Min Cost to Connect All Points, Redundant Connection</p><p class='level-line'><strong>Advanced:</strong> Reconstruct Itinerary, Critical Connections in a Network</p></section><section class='topic-block'><h3>15. Dynamic Programming 1D</h3><p class='level-line'><strong>Beginner:</strong> Climbing Stairs, Min Cost Climbing Stairs, House Robber</p><p class='level-line'><strong>Intermediate:</strong> House Robber II, Coin Change, Decode Ways, Word Break</p><p class='level-line'><strong>Advanced:</strong> Perfect Squares, Integer Break</p></section><section class='topic-block'><h3>16. Dynamic Programming 2D</h3><p class='level-line'><strong>Beginner:</strong> Unique Paths, Minimum Path Sum</p><p class='level-line'><strong>Intermediate:</strong> Longest Common Subsequence, Edit Distance, Partition Equal Subset Sum, Target Sum</p><p class='level-line'><strong>Advanced:</strong> Distinct Subsequences, Burst Balloons</p></section><section class='topic-block'><h3>17. Bit Manipulation</h3><p class='level-line'><strong>Beginner:</strong> Single Number, Number of 1 Bits, Counting Bits, Power of Two</p><p class='level-line'><strong>Intermediate:</strong> Reverse Bits, Bitwise AND of Numbers Range, Sum of Two Integers</p><p class='level-line'><strong>Advanced:</strong> Maximum XOR of Two Numbers in an Array</p></section><section class='topic-block'><h3>18. Trie and Advanced Structures</h3><p class='level-line'><strong>Beginner:</strong> Implement Trie (Prefix Tree), Design Add and Search Words Data Structure</p><p class='level-line'><strong>Intermediate:</strong> Word Search II, Replace Words</p><p class='level-line'><strong>Advanced:</strong> Maximum XOR with Trie, Range Sum Query - Mutable</p></section>
+
+    <section class="topic-block">
+      <h3>How to Use This Sheet</h3>
+      <ul>
+        <li>Start with 4 to 6 problems per topic before moving deeper.</li><li>Revisit wrong problems after 2 to 3 days.</li><li>Maintain notes for patterns, mistakes, and reusable templates.</li><li>Do not jump to dynamic programming too early; build comfort in arrays, strings, trees, and graphs first.</li>
+      </ul>
+    </section>
+
+    <p class="footer-note">Prepared for placement preparation, interview problem solving, and long-term DSA fundamentals.</p>
+  </main>
+</body>
+</html>
